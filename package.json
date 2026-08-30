@@ -6,9 +6,9 @@
   "overrides": {
     "nf3": "0.3.17"
   },
- "scripts": {
+  "scripts": {
     "dev": "vite dev --host 0.0.0.0 --port 8080",
-    "build": "vite build",
+    "build": "npx @tanstack/router-plugin build || npx vite build",
     "db:migrate": "echo 'skipped'",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
